@@ -1,0 +1,170 @@
+/* variables */
+:root{
+    --main-transition: .5s;
+}
+/* variables */
+/* start global rules */
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+header .overlay,
+#duration .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(214, 46, 51, 0.6);
+}
+/* end global rules */
+/* start header */
+header{
+    background-image: url("../images/events-heavenly-header.jpg");
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100%;
+}
+header h1{
+    font-size: 60px;
+    margin-top: 160px;
+}
+header .icon{
+    cursor: pointer;
+}
+header .icon span{
+    font-size: 30px;
+    padding-left: 7px;
+}
+/* end header */
+/*start sidebar */
+.sidebar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    z-index: 9;
+}
+.sidebar-inner{
+    padding: 10px;
+    width: 250px;
+    background-color: #414658;
+    position: relative;
+}
+.sidebar-inner i{
+    position: absolute;
+    right: 35px;
+    top: 35px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color var(--main-transition);
+}
+.sidebar-inner ul li a{
+    font-size: 25px;
+    display: block;
+    padding: 20px 5px;
+    transition: color var(--main-transition);
+}
+.sidebar-inner ul li a:hover,
+.sidebar-inner i:hover{
+    color: rgba(214, 46, 51, 0.4) !important;
+}
+/*end sidebar */
+/* start accordion section */
+.accordion h3{
+    margin-bottom: 0;
+}
+.accordion h3 button{
+    border: none;
+    display: block;
+    background-color: rgba(214, 46, 51, 0.6);
+    color: #fff;
+    width: 100%;
+    font-size: 24px;
+    padding: 10px;
+}
+.accordion div{
+    background-color: #ccc;
+    padding: 10px;
+    font-size: 13.7px;
+    line-height: 1.42857143;
+    display: none;
+}
+/* end accordion section */
+/* start counter */
+.row>*{
+    flex-shrink: 1;
+}
+#duration{
+    background-image: url(../images/invitation-2508607__340.jpg);
+    background-size: 100% 100%;
+    min-height: 350px;
+    width: 100%;
+    position: relative;
+    font-size: 24px;
+}
+#duration .day,
+#duration .hour,
+#duration .minute,
+#duration .second{
+    border: 1px solid #fff;
+    padding: 50px;
+    color: #fff;
+}
+@media(max-width: 576px){
+    #duration .day,
+    #duration .hour,
+    #duration .minute,
+    #duration .second{
+        padding: 30px;
+    }
+    #duration h3{
+        font-size: 14px;
+    }
+}
+/* end counter */
+/* start contact */
+#contact h2,
+#contact h3{
+    color: #444;
+}
+#contact h2{
+    font-size: 35px;
+}
+#contact h3{
+    font-size: 18px;
+}
+#contact p,
+#contact ul li span,
+#contact i{
+    color: #777;
+}
+#contact .email,
+#contact .text span{
+    color: #D62E33;
+}
+#contact .icon{
+    width: 35px;
+    height: 35px;
+    border: 1px solid #777;
+    transition: color var(--main-transition);
+    cursor: pointer;
+}
+#contact .icon:hover{
+    background-color: #D62E33;
+    border: none;
+}
+#contact .icon:hover i{
+    color: #fff;
+}
+#contact input,
+textarea{
+    border-color: #ccc !important;
+    color: #555 !important;
+}
+#contact a{
+    background-color: #D62E33;
+    padding: 8px 18px;
+    font-size: 14px;
+}
+/* end contact */
